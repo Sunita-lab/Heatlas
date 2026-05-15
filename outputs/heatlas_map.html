@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_774a95a031ffa096d7e45c76c4d4cfc2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_774a95a031ffa096d7e45c76c4d4cfc2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_774a95a031ffa096d7e45c76c4d4cfc2 = L.map(
+                "map_774a95a031ffa096d7e45c76c4d4cfc2",
+                {
+                    center: [20.2961, 85.8245],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_04183880ea0208bb1bca3957ad165844 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_04183880ea0208bb1bca3957ad165844.addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+            var circle_marker_951eebe619e879c9088d38ba1008cc69 = L.circleMarker(
+                [20.2961, 85.8245],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_bee1c2bfed9b5ecd00b9b609c2b77acb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a201904092728d09f6bbd2d5d97574a6 = $(`<div id="html_a201904092728d09f6bbd2d5d97574a6" style="width: 100.0%; height: 100.0%;">     <b>AcharyaVihar</b><br>     Risk: Medium<br>     Score: 0.745<br>     Temp: 27.1°C<br>     NDVI: 0.462<br>     Population Density: 49.6 </div>`)[0];
+                popup_bee1c2bfed9b5ecd00b9b609c2b77acb.setContent(html_a201904092728d09f6bbd2d5d97574a6);
+            
+        
+
+        circle_marker_951eebe619e879c9088d38ba1008cc69.bindPopup(popup_bee1c2bfed9b5ecd00b9b609c2b77acb)
+        ;
+
+        
+    
+    
+            var circle_marker_f3404b4ae0551713c342b42e835fa127 = L.circleMarker(
+                [20.27, 85.84],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_857ba1da5b1eab873f9669bbf64adc70 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d8123f1bc3c88016e9a210417c497ec7 = $(`<div id="html_d8123f1bc3c88016e9a210417c497ec7" style="width: 100.0%; height: 100.0%;">     <b>AshokNagar</b><br>     Risk: Medium<br>     Score: 0.747<br>     Temp: 27.1°C<br>     NDVI: 0.531<br>     Population Density: 64.4 </div>`)[0];
+                popup_857ba1da5b1eab873f9669bbf64adc70.setContent(html_d8123f1bc3c88016e9a210417c497ec7);
+            
+        
+
+        circle_marker_f3404b4ae0551713c342b42e835fa127.bindPopup(popup_857ba1da5b1eab873f9669bbf64adc70)
+        ;
+
+        
+    
+    
+            var circle_marker_03a4e68ff820a56a38d4302ca7e977ef = L.circleMarker(
+                [20.258, 85.835],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_6cdce298a3a6ca1336a532ff3b533ba5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3a29c10f23c91fec97b578136aeb9edf = $(`<div id="html_3a29c10f23c91fec97b578136aeb9edf" style="width: 100.0%; height: 100.0%;">     <b>BapujiNagar</b><br>     Risk: Medium<br>     Score: 0.771<br>     Temp: 27.1°C<br>     NDVI: 0.563<br>     Population Density: 87.2 </div>`)[0];
+                popup_6cdce298a3a6ca1336a532ff3b533ba5.setContent(html_3a29c10f23c91fec97b578136aeb9edf);
+            
+        
+
+        circle_marker_03a4e68ff820a56a38d4302ca7e977ef.bindPopup(popup_6cdce298a3a6ca1336a532ff3b533ba5)
+        ;
+
+        
+    
+    
+            var circle_marker_47a9dbc0fb4a29cac9b3f7f037de58ee = L.circleMarker(
+                [20.305, 85.82],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_880140a7c76fc54aa8181cb9eef85b4a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_72e60f2756b5da2def49aac23b3bbba2 = $(`<div id="html_72e60f2756b5da2def49aac23b3bbba2" style="width: 100.0%; height: 100.0%;">     <b>BhoiNagar</b><br>     Risk: Medium<br>     Score: 0.731<br>     Temp: 27.1°C<br>     NDVI: 0.568<br>     Population Density: 60.0 </div>`)[0];
+                popup_880140a7c76fc54aa8181cb9eef85b4a.setContent(html_72e60f2756b5da2def49aac23b3bbba2);
+            
+        
+
+        circle_marker_47a9dbc0fb4a29cac9b3f7f037de58ee.bindPopup(popup_880140a7c76fc54aa8181cb9eef85b4a)
+        ;
+
+        
+    
+    
+            var circle_marker_3a997d88bb82ba0a9c5a99f7ed829181 = L.circleMarker(
+                [20.275, 85.815],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_e7622549ded1acdf4748eaec0571f4e6 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3df278d374f476a6a3918cff56b6b71a = $(`<div id="html_3df278d374f476a6a3918cff56b6b71a" style="width: 100.0%; height: 100.0%;">     <b>BhoumaNagar</b><br>     Risk: Medium<br>     Score: 0.736<br>     Temp: 27.1°C<br>     NDVI: 0.543<br>     Population Density: 58.7 </div>`)[0];
+                popup_e7622549ded1acdf4748eaec0571f4e6.setContent(html_3df278d374f476a6a3918cff56b6b71a);
+            
+        
+
+        circle_marker_3a997d88bb82ba0a9c5a99f7ed829181.bindPopup(popup_e7622549ded1acdf4748eaec0571f4e6)
+        ;
+
+        
+    
+    
+            var circle_marker_d92e86d40d12cc65e315c46dc49d632e = L.circleMarker(
+                [20.32, 85.78],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_87be398928687542b1f7afb05374f16c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6f0806a267a001c725cba5cd6fce8d8f = $(`<div id="html_6f0806a267a001c725cba5cd6fce8d8f" style="width: 100.0%; height: 100.0%;">     <b>Chandrasekharpur</b><br>     Risk: Low<br>     Score: 0.603<br>     Temp: 27.1°C<br>     NDVI: 0.74<br>     Population Density: 2.1 </div>`)[0];
+                popup_87be398928687542b1f7afb05374f16c.setContent(html_6f0806a267a001c725cba5cd6fce8d8f);
+            
+        
+
+        circle_marker_d92e86d40d12cc65e315c46dc49d632e.bindPopup(popup_87be398928687542b1f7afb05374f16c)
+        ;
+
+        
+    
+    
+            var circle_marker_7190f2ef889daaef031e4f658f6921ef = L.circleMarker(
+                [20.285, 85.795],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_ad514cbdf798a63e1bf779179e024e84 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f0efe29ae1c9f938d4e90d6f4d122a3a = $(`<div id="html_f0efe29ae1c9f938d4e90d6f4d122a3a" style="width: 100.0%; height: 100.0%;">     <b>GangaNagar</b><br>     Risk: Medium<br>     Score: 0.766<br>     Temp: 27.1°C<br>     NDVI: 0.444<br>     Population Density: 61.0 </div>`)[0];
+                popup_ad514cbdf798a63e1bf779179e024e84.setContent(html_f0efe29ae1c9f938d4e90d6f4d122a3a);
+            
+        
+
+        circle_marker_7190f2ef889daaef031e4f658f6921ef.bindPopup(popup_ad514cbdf798a63e1bf779179e024e84)
+        ;
+
+        
+    
+    
+            var circle_marker_97ffbe4f2ecea874605dbdfb1caae29e = L.circleMarker(
+                [20.31, 85.805],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_189f6c9e18224a9d3399afe2e9806879 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_44becc3891b5c69045708f8ce3135107 = $(`<div id="html_44becc3891b5c69045708f8ce3135107" style="width: 100.0%; height: 100.0%;">     <b>IRCVillage</b><br>     Risk: Low<br>     Score: 0.685<br>     Temp: 27.1°C<br>     NDVI: 0.614<br>     Population Density: 36.3 </div>`)[0];
+                popup_189f6c9e18224a9d3399afe2e9806879.setContent(html_44becc3891b5c69045708f8ce3135107);
+            
+        
+
+        circle_marker_97ffbe4f2ecea874605dbdfb1caae29e.bindPopup(popup_189f6c9e18224a9d3399afe2e9806879)
+        ;
+
+        
+    
+    
+            var circle_marker_b685fdddc98f4d93bac5999dfa817bd8 = L.circleMarker(
+                [20.3, 85.818],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_f05c0b5742153e8f219fbbaa248182dc = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_45a40499f3b533e6266b947829a070ae = $(`<div id="html_45a40499f3b533e6266b947829a070ae" style="width: 100.0%; height: 100.0%;">     <b>JaydevVihar</b><br>     Risk: Medium<br>     Score: 0.742<br>     Temp: 27.0°C<br>     NDVI: 0.365<br>     Population Density: 29.9 </div>`)[0];
+                popup_f05c0b5742153e8f219fbbaa248182dc.setContent(html_45a40499f3b533e6266b947829a070ae);
+            
+        
+
+        circle_marker_b685fdddc98f4d93bac5999dfa817bd8.bindPopup(popup_f05c0b5742153e8f219fbbaa248182dc)
+        ;
+
+        
+    
+    
+            var circle_marker_d256bbc0c5a63c356a7f58e78774342f = L.circleMarker(
+                [20.265, 85.81],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_074f6508310c5604fadfc65d92e219b5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0e436aff06b1ebfae15c9c3a076e46c6 = $(`<div id="html_0e436aff06b1ebfae15c9c3a076e46c6" style="width: 100.0%; height: 100.0%;">     <b>Kalinganagar</b><br>     Risk: High<br>     Score: 0.841<br>     Temp: 27.0°C<br>     NDVI: 0.367<br>     Population Density: 100.6 </div>`)[0];
+                popup_074f6508310c5604fadfc65d92e219b5.setContent(html_0e436aff06b1ebfae15c9c3a076e46c6);
+            
+        
+
+        circle_marker_d256bbc0c5a63c356a7f58e78774342f.bindPopup(popup_074f6508310c5604fadfc65d92e219b5)
+        ;
+
+        
+    
+    
+            var circle_marker_8de87819562ca90e967c81095984c8d3 = L.circleMarker(
+                [20.255, 85.83],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_b12eb01a3d269d8ffac6655855e14c44 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_69c31d18a5bbba16a45841cae9224281 = $(`<div id="html_69c31d18a5bbba16a45841cae9224281" style="width: 100.0%; height: 100.0%;">     <b>KeshariNagar</b><br>     Risk: High<br>     Score: 0.872<br>     Temp: 27.1°C<br>     NDVI: 0.414<br>     Population Density: 130.1 </div>`)[0];
+                popup_b12eb01a3d269d8ffac6655855e14c44.setContent(html_69c31d18a5bbba16a45841cae9224281);
+            
+        
+
+        circle_marker_8de87819562ca90e967c81095984c8d3.bindPopup(popup_b12eb01a3d269d8ffac6655855e14c44)
+        ;
+
+        
+    
+    
+            var circle_marker_49da82976ba08961fd5c926586feacc6 = L.circleMarker(
+                [20.262, 85.842],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_d90b253252ec94f5d22d2805648aa2ec = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c083472a65cae7c6a6a0b8282a87169e = $(`<div id="html_c083472a65cae7c6a6a0b8282a87169e" style="width: 100.0%; height: 100.0%;">     <b>KharavelaNagar</b><br>     Risk: Medium<br>     Score: 0.774<br>     Temp: 27.1°C<br>     NDVI: 0.575<br>     Population Density: 91.3 </div>`)[0];
+                popup_d90b253252ec94f5d22d2805648aa2ec.setContent(html_c083472a65cae7c6a6a0b8282a87169e);
+            
+        
+
+        circle_marker_49da82976ba08961fd5c926586feacc6.bindPopup(popup_d90b253252ec94f5d22d2805648aa2ec)
+        ;
+
+        
+    
+    
+            var circle_marker_aad6e0cccfc1cfb1d61bebfeb18de9a3 = L.circleMarker(
+                [20.27, 85.848],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_3982c34bbbe0efe1dffff044ee7fa5ca = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9f3c112da5ceb4f35d71482a719cda6e = $(`<div id="html_9f3c112da5ceb4f35d71482a719cda6e" style="width: 100.0%; height: 100.0%;">     <b>MasterCanteen</b><br>     Risk: High<br>     Score: 0.854<br>     Temp: 27.1°C<br>     NDVI: 0.54<br>     Population Density: 141.7 </div>`)[0];
+                popup_3982c34bbbe0efe1dffff044ee7fa5ca.setContent(html_9f3c112da5ceb4f35d71482a719cda6e);
+            
+        
+
+        circle_marker_aad6e0cccfc1cfb1d61bebfeb18de9a3.bindPopup(popup_3982c34bbbe0efe1dffff044ee7fa5ca)
+        ;
+
+        
+    
+    
+            var circle_marker_ebdac2d5e7252ef95760aeac19ed35c0 = L.circleMarker(
+                [20.29, 85.81],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_68a00de94967fbadb0df1d03dea66f99 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_96f3c155930dbf056e84c31de8dac554 = $(`<div id="html_96f3c155930dbf056e84c31de8dac554" style="width: 100.0%; height: 100.0%;">     <b>Nayapalli</b><br>     Risk: High<br>     Score: 0.855<br>     Temp: 27.1°C<br>     NDVI: 0.404<br>     Population Density: 116.5 </div>`)[0];
+                popup_68a00de94967fbadb0df1d03dea66f99.setContent(html_96f3c155930dbf056e84c31de8dac554);
+            
+        
+
+        circle_marker_ebdac2d5e7252ef95760aeac19ed35c0.bindPopup(popup_68a00de94967fbadb0df1d03dea66f99)
+        ;
+
+        
+    
+    
+            var circle_marker_1d93e73b1a0941b538fee6d41668ae9e = L.circleMarker(
+                [20.245, 85.865],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_f5897f279067ad6a794fee4e834f84ef = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9885ea78c93f9728ba568c9c34d1f619 = $(`<div id="html_9885ea78c93f9728ba568c9c34d1f619" style="width: 100.0%; height: 100.0%;">     <b>OldTown</b><br>     Risk: High<br>     Score: 0.821<br>     Temp: 27.1°C<br>     NDVI: 0.43<br>     Population Density: 97.5 </div>`)[0];
+                popup_f5897f279067ad6a794fee4e834f84ef.setContent(html_9885ea78c93f9728ba568c9c34d1f619);
+            
+        
+
+        circle_marker_1d93e73b1a0941b538fee6d41668ae9e.bindPopup(popup_f5897f279067ad6a794fee4e834f84ef)
+        ;
+
+        
+    
+    
+            var circle_marker_65f701a08362e086afe0acf87a0306db = L.circleMarker(
+                [20.35, 85.82],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_978b99f87437180ab061a9f925c608b2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fc29b7a9aa4d4b88f025b3a7b4216ffd = $(`<div id="html_fc29b7a9aa4d4b88f025b3a7b4216ffd" style="width: 100.0%; height: 100.0%;">     <b>Patia</b><br>     Risk: High<br>     Score: 0.846<br>     Temp: 27.0°C<br>     NDVI: 0.39<br>     Population Density: 108.5 </div>`)[0];
+                popup_978b99f87437180ab061a9f925c608b2.setContent(html_fc29b7a9aa4d4b88f025b3a7b4216ffd);
+            
+        
+
+        circle_marker_65f701a08362e086afe0acf87a0306db.bindPopup(popup_978b99f87437180ab061a9f925c608b2)
+        ;
+
+        
+    
+    
+            var circle_marker_76ba009dbdaad928ca3e311e29d1d60c = L.circleMarker(
+                [20.28, 85.845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_696b2ad71a9dd5bfb9eb91d8bd41243a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e9eb9685deb2b8cd3766461221c2f36c = $(`<div id="html_e9eb9685deb2b8cd3766461221c2f36c" style="width: 100.0%; height: 100.0%;">     <b>Rasulgarh</b><br>     Risk: Medium<br>     Score: 0.795<br>     Temp: 27.1°C<br>     NDVI: 0.511<br>     Population Density: 94.0 </div>`)[0];
+                popup_696b2ad71a9dd5bfb9eb91d8bd41243a.setContent(html_e9eb9685deb2b8cd3766461221c2f36c);
+            
+        
+
+        circle_marker_76ba009dbdaad928ca3e311e29d1d60c.bindPopup(popup_696b2ad71a9dd5bfb9eb91d8bd41243a)
+        ;
+
+        
+    
+    
+            var circle_marker_b498949cb32198e95334125107296eb8 = L.circleMarker(
+                [20.275, 85.838],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_9cc6eb8992857cf08a04f51d1f946a90 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3948b0e197728ac225a8c4353e3d0c60 = $(`<div id="html_3948b0e197728ac225a8c4353e3d0c60" style="width: 100.0%; height: 100.0%;">     <b>SaheedNagar</b><br>     Risk: Medium<br>     Score: 0.778<br>     Temp: 27.1°C<br>     NDVI: 0.513<br>     Population Density: 82.8 </div>`)[0];
+                popup_9cc6eb8992857cf08a04f51d1f946a90.setContent(html_3948b0e197728ac225a8c4353e3d0c60);
+            
+        
+
+        circle_marker_b498949cb32198e95334125107296eb8.bindPopup(popup_9cc6eb8992857cf08a04f51d1f946a90)
+        ;
+
+        
+    
+    
+            var circle_marker_51f4c6eb6bc59a70de8f85032dcd377f = L.circleMarker(
+                [20.268, 85.82],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_695dbd608cf355e68e90a6ee0aeefba2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_941efae000290aafe47aec2fc03b7409 = $(`<div id="html_941efae000290aafe47aec2fc03b7409" style="width: 100.0%; height: 100.0%;">     <b>SuryaNagar</b><br>     Risk: Medium<br>     Score: 0.797<br>     Temp: 27.1°C<br>     NDVI: 0.448<br>     Population Density: 83.4 </div>`)[0];
+                popup_695dbd608cf355e68e90a6ee0aeefba2.setContent(html_941efae000290aafe47aec2fc03b7409);
+            
+        
+
+        circle_marker_51f4c6eb6bc59a70de8f85032dcd377f.bindPopup(popup_695dbd608cf355e68e90a6ee0aeefba2)
+        ;
+
+        
+    
+    
+            var circle_marker_bc7781995383b7282c4cd70f101ca10a = L.circleMarker(
+                [20.302, 85.83],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_774a95a031ffa096d7e45c76c4d4cfc2);
+        
+    
+        var popup_958adf8b3690034b572ea575b70b6dea = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_182042721d8d0cda02d3541bcbba834a = $(`<div id="html_182042721d8d0cda02d3541bcbba834a" style="width: 100.0%; height: 100.0%;">     <b>VaniVihar</b><br>     Risk: Medium<br>     Score: 0.761<br>     Temp: 27.1°C<br>     NDVI: 0.453<br>     Population Density: 59.3 </div>`)[0];
+                popup_958adf8b3690034b572ea575b70b6dea.setContent(html_182042721d8d0cda02d3541bcbba834a);
+            
+        
+
+        circle_marker_bc7781995383b7282c4cd70f101ca10a.bindPopup(popup_958adf8b3690034b572ea575b70b6dea)
+        ;
+
+        
+    
+</script>
+</html>
