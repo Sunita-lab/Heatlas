@@ -126,17 +126,12 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── Data ───────────────────────────────────────────────────────────────────────
-df = pd.read_csv("data/samples/final_data.csv")
+df = pd.read_csv("data/samples/final_data_v2.csv")
 forecast_df = pd.read_csv("outputs/forecast_7day.csv")
 coords_df = pd.read_csv("data/samples/bhubaneswar_coords.csv")
 coords_df["ID"] = coords_df["ID"].str.replace("_", "")
 
-def get_label(score):
-    if score >= 0.80: return "High"
-    elif score >= 0.73: return "Medium"
-    else: return "Low"
-
-df["risk_label"] = df["risk_score"].apply(get_label)
+df["risk_label"] = df["risk_label_v2"]
 color_map = {"High": "red", "Medium": "orange", "Low": "green"}
 map_df = df.merge(coords_df[["ID", "Latitude", "Longitude"]], on="ID")
 
@@ -172,7 +167,7 @@ for _, row in map_df.iterrows():
         popup=folium.Popup(
             f"<b style='font-family:monospace'>{row['ID']}</b><br>"
             f"Risk: {row['risk_label']}<br>"
-            f"Score: {row['risk_score']:.3f}<br>"
+            f"Score: {row['risk_score_v2']:.3f}<br>"
             f"Temp: {row['temperature']}°C<br>"
             f"NDVI: {row['ndvi']:.3f}",
             max_width=180
@@ -192,7 +187,7 @@ badge_class = f"risk-{label.lower()}"
 st.markdown(f'<span class="risk-badge {badge_class}">{label.upper()} RISK</span>', unsafe_allow_html=True)
 
 col1, col2, col3, col4 = st.columns(4)
-col1.metric("Risk Score", f"{row['risk_score']:.3f}")
+col1.metric("Risk Score", f"{row['risk_score_v2']:.3f}")
 col2.metric("Temperature", f"{row['temperature']}°C")
 col3.metric("NDVI", f"{row['ndvi']:.3f}")
 col4.metric("Pop. Density", f"{row['population_density']:.1f}")
@@ -212,6 +207,6 @@ else:
 st.markdown("""
 <hr>
 <p style='color:#333; font-size:0.75rem; font-family:monospace; text-align:center; margin-top:1rem;'>
-HEATLAS v0.1 &nbsp;·&nbsp; Data: NASA APPEEARS · WorldPop · Open-Meteo &nbsp;·&nbsp; Active Development
+HEATLAS v0.2 &nbsp;·&nbsp; Data: NASA APPEEARS · WorldPop · Open-Meteo &nbsp;·&nbsp; Active Development
 </p>
 """, unsafe_allow_html=True)
